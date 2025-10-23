@@ -43,3 +43,21 @@ var restOfName = myNamne.slice(1, myNamne.length);
 var capitaliseName = upperCaseFirstChar + restOfName;
 
 alert("Hello " + capitaliseName)
+
+
+// bmi calculator
+
+var weight = prompt("Enter your weight in kg");
+var height = prompt("Enter your height in meters");
+var bmi = weight / (height * height);
+alert("Your BMI is " + bmi);
+
+// functions 
+function bmiCalculator(weight, height) {
+    var bmi = weight / (height * height);
+    return bmi;
+}
+
+// math.round()
+var bmi = Math.round(bmiCalculator(65, 1.8));
+alert("Your BMI is " + bmi);
