@@ -68,4 +68,207 @@ function isLeap(year) {
 // Array
 
 var guestList = ["Angela", "Jack", "Pam", "James", "Lara", "Jason"];
-console.log(guestList.length)
+// console.log(guestList.length)
+var guestUser = prompt("Guess the name in the list");
+
+if (guestList.includes(guestUser)) {
+    alert("Welcome!")
+} else {
+    alert("Try again!")
+}
+
+// fizz buzz
+
+var output = [];
+var count = 1;
+
+function fizzBuzz() {
+
+if ( count % 3 === 0 && count % 5 === 0) {
+    output.push("FizzBuzz")
+    
+} else if (count % 3 === 0) {
+    output.push("Fizz");
+    
+} else if ( count % 5 === 0){
+    output.push("Buzz")
+    
+} else {
+    output.push(count);
+}
+    
+count++;
+
+    console.log(output);
+    
+}
+
+
+// Who is buying lunch today?
+
+var nameList = ["Angela", "Ben", "Jenny", "Michael", "Chloe"];
+
+
+function buyLunch() {
+    var randomN = Math.random();
+    randomN = randomN * nameList.length;
+    randomN = Math.floor(randomN);
+    buyer = nameList[randomN];
+    return buyer + " is going to buy lunch today!";
+
+}
+
+
+// while loops
+
+function isLeap(year) {
+    if (year % 4 === 0) {
+        if (year % 100 === 0) {
+            if (year % 400 === 0) {
+                return "Leap year."
+            } else {
+                return "Not leap year."
+            }
+        } else {
+            return "Leap year."
+        }   
+    } else {
+        return "Not leap year."
+    }
+}
+
+
+// Array
+
+var guestList = ["Angela", "Jack", "Pam", "James", "Lara", "Jason"];
+// console.log(guestList.length)
+var guestUser = prompt("Guess the name in the list");
+
+if (guestList.includes(guestUser)) {
+    alert("Welcome!")
+} else {
+    alert("Try again!")
+}
+
+// fizz buzz while loop
+
+var output = [];
+var count = 1;
+
+function fizzBuzz() {
+
+    while(count <= 100) {
+
+        if ( count % 3 === 0 && count % 5 === 0) {
+            output.push("FizzBuzz")
+            
+        } else if (count % 3 === 0) {
+            output.push("Fizz");
+            
+        } else if ( count % 5 === 0){
+            output.push("Buzz")
+            
+        } else {
+            output.push(count);
+        }
+            
+        count++;
+
+    }
+
+    console.log(output);
+    
+}
+
+// 100 bottles of beer
+
+var contador = 100;
+
+function song() {
+
+    while (contador >= 0) {
+
+        if  (contador >= 1) {
+            console.log(contador + " bottles of beer on the wall, " + contador + " bottles of beer. Take one down and pass it around, " + (contador -1)  + " bottles of beer on the wall.");
+
+        } else {
+            console.log("No more bottles of beer on the wall, no more bottles of beer.Go to the store and buy some more, 99 bottles of beer on the wall.");
+        }
+
+        contador--;
+
+    }
+}
+
+// for loop
+
+var output = [];
+
+function fizzBuzz() {
+    for(var count = 1; count < 101; count++){
+        if (count % 3 === 0 && count % 5 === 0) {
+            output.push("FizzBuzz");
+
+        } else if (count % 3 === 0){
+            output.push("Fizz");
+        } else if (count % 5 === 0) {
+            output.push("Buzz");
+        } else {
+            output.push(count);
+        }
+    }
+    console.log(output)
+}
+
+// fibonacci 
+
+// function fibonacciGenerator (n) {
+//     var output = [];
+//     var value1 = 0;
+//     var value2 = 1;
+
+//     if (n === 1) {
+//         output.push(value1);
+//         return output;
+//     }
+    
+//     if (n === 2) {
+//         output.push(value1);
+//         output.push(value2);
+//         return output;
+//     }
+//     // console.log(output);
+
+//     output.push(value1);
+//     output.push(value2);
+//     for (var i = 0; i < n; i++) {
+//         newValue = value1 + value2;
+//         value1 = value2;
+//         value2 = newValue
+//         output.push(newValue);
+//     }
+//     return output;
+// }
+
+function fibonacciGenerator(n) {
+    output = [];
+
+    if (n === 1) {
+        output = [0];
+    }
+    else if (n === 2) {
+        output = [0, 1];
+    }
+    else {
+        output = [0, 1];
+
+        for (var i = 2; i < n; i++) {
+            output.push(output[output.length - 2] + output[output.length - 1]);
+
+        }
+
+    }
+
+    return output;
+
+}
