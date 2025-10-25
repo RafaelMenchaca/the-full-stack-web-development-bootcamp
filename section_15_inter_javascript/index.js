@@ -64,3 +64,8 @@ function isLeap(year) {
     }
 }
 
+
+// Array
+
+var guestList = ["Angela", "Jack", "Pam", "James", "Lara", "Jason"];
+console.log(guestList.length)
