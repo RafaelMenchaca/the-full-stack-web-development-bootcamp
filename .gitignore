@@ -1,0 +1,26 @@
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+.env
+.DS_Store # macOS specific
+
+# Build artifacts
+dist/
+build/
+coverage/
+
+# Log files
+*.log
+
+# Editor and OS specific files
+.vscode/
+.idea/
+Thumbs.db # Windows specific
+
+# Temporary files
+*.tmp
+*~
+
+# Test results
+test-results/
