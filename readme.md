@@ -14,15 +14,19 @@ The bootcamp covers:
 ## 🚀 Purpose
 This repo serves as a **learning portfolio**, tracking my daily progress and showcasing each project I complete during the course.
 
-## 🧠 Current Progress
-- ✅ Section 1: Introduction and Setup  
-- ⏳ Section 2: HTML, CSS Basics  
-- 🔜 Upcoming: JavaScript and DOM Manipulation  
-
 ## 📅 Commit Philosophy
 I make **daily commits** as I progress through the course to maintain consistency and version tracking.
 
 ---
 
-👨‍💻 **Created by:** [Rafael Menchaca](https://github.com/RafaelMenchaca)  
-📚 *Learning never stops.*
+## 📌 Notes
+
+This is a **learning repository**, not a production project.  
+The purpose is to track progress, reinforce concepts, and build a solid foundation for future real-world applications.
+
+---
+
+## ✍️ Author
+
+**Rafael Menchaca**  
+Learning, building, and iterating — one course at a time.
